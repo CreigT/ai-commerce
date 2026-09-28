@@ -3,6 +3,7 @@ import { cookies } from "next/headers";
 import { ACCESS_COOKIE, decodeAccess } from "@/lib/access";
 import { getProduct, products } from "@/lib/products";
 
+export const dynamic = "force-dynamic";
 export const metadata = { title: "Library" };
 
 const files: Record<string, { title: string; body: string }[]> = {
